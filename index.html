@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia e Inovação no Agronegócio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tecnologia e Inovação no Agronegócio</h1>
+    </header>
+    <main>
+        <section class="tech-section">
+            <div class="tech-item" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+                <img src="https://example.com/drone.jpg" alt="Drones">
+                <h2>Drones</h2>
+                <p>Utilizados para monitoramento de culturas e pulverização de defensivos agrícolas.</p>
+                <button onclick="showMore(event, this)">Leia mais</button>
+                <div class="more-info" style="display: none;">
+                    <p>Os drones permitem um monitoramento aéreo preciso das culturas, ajudando a identificar pragas e doenças com antecedência, o que possibilita uma ação rápida e eficaz.</p>
+                </div>
+            </div>
+            <div class="tech-item" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+                <img src="https://example.com/sensor.jpg" alt="Sensores de Solo">
+                <h2>Sensores de Solo</h2>
+                <p>Ajudam a medir a umidade e a composição do solo, otimizando a irrigação e fertilização.</p>
+                <button onclick="showMore(event, this)">Leia mais</button>
+                <div class="more-info" style="display: none;">
+                    <p>Os sensores de solo fornecem dados em tempo real sobre as condições do solo, permitindo uma gestão mais eficiente dos recursos hídricos e nutricionais das plantas.</p>
+                </div>
+            </div>
+            <div class="tech-item" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+                <img src="https://example.com/irrigation.jpg" alt="Sistemas de Irrigação Automatizados">
+                <h2>Sistemas de Irrigação Automatizados</h2>
+                <p>Permitem o controle preciso da quantidade de água fornecida às plantas, economizando recursos.</p>
+                <button onclick="showMore(event, this)">Leia mais</button>
+                <div class="more-info" style="display: none;">
+                    <p>Os sistemas de irrigação automatizados utilizam sensores e algoritmos para fornecer água na quantidade certa e no momento certo, evitando desperdícios e aumentando a produtividade.</p>
+                </div>
+            </div>
+            <div class="tech-item" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+                <img src="https://example.com/bigdata.jpg" alt="Big Data e IA">
+                <h2>Big Data e IA</h2>
+                <p>Utilizados para análise de dados agrícolas e previsão de safras, melhorando a tomada de decisões.</p>
+                <button onclick="showMore(event, this)">Leia mais</button>
+                <div class="more-info" style="display: none;">
+                    <p>Big Data e IA permitem a análise de grandes volumes de dados, ajudando agricultores a prever padrões climáticos, planejar colheitas e melhorar a eficiência operacional.</p>
+                </div>
+            </div>
+        </section>
+        <section class="data-section">
+            <h2>Dados sobre o Uso de Tecnologias no Agronegócio</h2>
+            <ul>
+                <li>O uso de drones na agricultura cresceu 20% ao ano nos últimos 5 anos.</li>
+                <li>75% dos agricultores que utilizam sensores de solo relatam uma economia significativa de água.</li>
+                <li>Sistemas de irrigação automatizados aumentaram a produtividade em 30% nas fazendas que os adotaram.</li>
+                <li>Big Data e IA ajudaram a prever safras com 90% de precisão, segundo um estudo recente.</li>
+                <li>O mercado global de tecnologia agrícola deve atingir US$ 20 bilhões até 2025.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="">
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
